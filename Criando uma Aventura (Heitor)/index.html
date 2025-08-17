@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap" rel="stylesheet" />
+    <title>Início da Escola - Histórias Alternativas</title>
+</head>
+<body>
+    <main>
+        <!-- Passo 0 - Corredor da escola -->
+        <div class="passo ativo" id="passo-0">
+            <img src="https://p.turbosquid.com/ts-thumb/jQ/Wsx7DS/celTEdmW/schoolhallway_ts/jpg/1583249714/600x600/fit_q87/1c32d5b94838e45786c6b4da661623c0c11d7b5f/schoolhallway_ts.jpg" alt="Corredor da escola" />
+            <p>É o primeiro dia de aula e você entra no corredor da escola, sentindo aquela mistura de ansiedade e curiosidade. A aventura está só começando!</p>
+            <button class="btn-proximo" data-proximo="1">Ir para a quadra</button>
+            <button class="btn-proximo" data-proximo="2">Ir para a cantina</button>
+        </div>
+
+        <!-- Passo 1 - Quadra -->
+        <div class="passo" id="passo-1">
+            <img src="https://altipisos.com.br/wp-content/uploads/2020/05/altipisos-quadra-escola.jpeg" alt="Quadra da escola" />
+            <p>Na quadra, alguns alunos já jogam bola enquanto você decide para onde ir.</p>
+            <button class="btn-proximo" data-proximo="3">Conversar com a galera</button>
+            <button class="btn-proximo" data-proximo="4">Voltar para o corredor</button>
+        </div>
+
+        <!-- Passo 2 - Cantina -->
+        <div class="passo" id="passo-2">
+            <img src="https://www.jornalminuano.com.br/archive/uploads/imagens/2018/08/02/g/whatsapp_image_2018_08_02_at_12_22_30_5544.jpeg" alt="Cantina da escola" />
+            <p>Na cantina, você sente o cheiro do pão quentinho e ouve risadas ao fundo.</p>
+            <button class="btn-proximo" data-proximo="5">Sentar com um grupo desconhecido</button>
+            <button class="btn-proximo" data-proximo="6">Sair da cantina e voltar para o corredor</button>
+        </div>
+
+        <!-- Passo 3 - Conversar com a galera na quadra -->
+        <div class="passo" id="passo-3">
+            <p>Você conversa com a galera da quadra e acaba sendo convidado para um time de futebol.</p>
+            <button class="btn-proximo" data-proximo="7">Aceitar o convite</button>
+            <button class="btn-proximo" data-proximo="8">Recusar e ir para a cantina</button>
+        </div>
+
+        <!-- Passo 4 - Voltar para corredor da escola -->
+        <div class="passo" id="passo-4">
+            <img src="https://p.turbosquid.com/ts-thumb/jQ/Wsx7DS/celTEdmW/schoolhallway_ts/jpg/1583249714/600x600/fit_q87/1c32d5b94838e45786c6b4da661623c0c11d7b5f/schoolhallway_ts.jpg" alt="Corredor da escola" />
+            <p>De volta ao corredor, você sente a escola um pouco menos assustadora.</p>
+            <button class="btn-proximo" data-proximo="2">Ir para a cantina</button>
+            <button class="btn-proximo" data-proximo="0">Pausar e pensar</button>
+        </div>
+
+        <!-- Passo 5 - Sentar com grupo desconhecido na cantina -->
+        <div class="passo" id="passo-5">
+            <p>O grupo parece legal e te recebe bem. Você percebe que fazer amigos pode ser mais fácil do que imaginava.</p>
+            <button class="btn-proximo" data-proximo="9">Continuar amizade</button>
+            <button class="btn-proximo" data-proximo="10">Voltar para quadra</button>
+        </div>
+
+        <!-- Passo 6 - Sair da cantina -->
+        <div class="passo" id="passo-6">
+            <img src="https://p.turbosquid.com/ts-thumb/jQ/Wsx7DS/celTEdmW/schoolhallway_ts/jpg/1583249714/600x600/fit_q87/1c32d5b94838e45786c6b4da661623c0c11d7b5f/schoolhallway_ts.jpg" alt="Corredor da escola" />
+            <p>Você decide que não quer mais ficar na cantina e volta para o corredor da escola.</p>
+            <button class="btn-proximo" data-proximo="1">Ir para quadra</button>
+            <button class="btn-proximo" data-proximo="0">Pausar e pensar</button>
+        </div>
+
+        <!-- Passo 7 - Aceitar convite para jogar -->
+        <div class="passo" id="passo-7">
+            <p>Você entra para o time e se sente parte da galera. Seu primeiro dia de aula já está valendo a pena!</p>
+            <button class="btn-proximo" data-proximo="11">Final feliz</button>
+        </div>
+
+        <!-- Passo 8 - Recusar convite e ir para cantina -->
+        <div class="passo" id="passo-8">
+            <p>Você prefere evitar multidões e vai para a cantina.</p>
+            <button class="btn-proximo" data-proximo="5">Sentar com grupo desconhecido</button>
+            <button class="btn-proximo" data-proximo="6">Sair da cantina</button>
+        </div>
+
+        <!-- Passo 9 - Continuar amizade -->
+        <div class="passo" id="passo-9">
+            <p>Vocês trocam números e combinam de se encontrar no intervalo amanhã. Um novo capítulo começa.</p>
+            <button class="btn-proximo" data-proximo="11">Final feliz</button>
+        </div>
+
+        <!-- Passo 10 - Voltar para quadra -->
+        <div class="passo" id="passo-10">
+            <p>Você decide que prefere o esporte e volta para a quadra, deixando o grupo da cantina para depois.</p>
+            <button class="btn-proximo" data-proximo="7">Aceitar convite</button>
+            <button class="btn-proximo" data-proximo="4">Voltar para corredor</button>
+        </div>
+
+        <!-- Final Feliz -->
+        <div class="passo" id="passo-11">
+            <img src="https://img.freepik.com/fotos-premium/na-escola-criancas-diversas-estao-correndo-pelo-corredor-com-espaco-de-copia-ao-ar-livre_13339-365128.jpg" alt="Crianças correndo felizes no corredor" />
+            <p>No fim do semestre, você se tornou o líder da turma, ajudando seus colegas e ganhando o respeito de todo mundo. Sua aventura escolar foi um sucesso!</p>
+            <button class="btn-proximo" data-proximo="12">Ver outro final</button>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+
+        <!-- Final Triste -->
+        <div class="passo" id="passo-12">
+            <img src="https://img.freepik.com/fotos-premium/vista-frontal-triste-adolescente-na-escola_23-2149583175.jpg" alt="Pessoa triste na escola" />
+            <p>Os meses passaram e, apesar dos esforços, você ainda se sentia deslocado na escola. Mas sabe que ainda pode tentar de novo no próximo ano.</p>
+            <button class="btn-proximo" data-proximo="13">Ver outro final</button>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+
+        <!-- Final Engraçado -->
+        <div class="passo" id="passo-13">
+            <img src="https://thumbs.dreamstime.com/b/estudantes-multirraciais-voltando-%C3%A0-escola-e-se-divertindo-adolescentes-felizes-no-campus-universit%C3%A1rio-conceito-de-bolsa-277170960.jpg" alt="Galera se divertindo na escola" />
+            <p>Você tentou se enturmar, mas acabou viralizando com aquele vídeo engraçado no grupo da turma. Pelo menos todo mundo agora te conhece!</p>
+            <button class="btn-proximo" data-proximo="11">Ver final feliz</button>
+            <button class="btn-proximo" data-proximo="12">Ver final triste</button>
+            <button class="btn-proximo" data-proximo="0">Recomeçar</button>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
